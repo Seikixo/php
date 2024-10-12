@@ -23,8 +23,7 @@ declare(strict_types=1);
         var_dump($members);
     }
     introduceTeam("Izboogie", "Lil Wayne", "Breezy");
-
-    introduceTeam("Jiggalo", "Lil Wayne", "Breezy", ...$addedMembers);
+    introduceTeam("Jiggalo", "Lil Wayne", "Breezy", ...$addedMembers); //mix explicit arguments and unpacking
 
    
 
