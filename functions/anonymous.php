@@ -1,5 +1,6 @@
 <?php
 
+    //anonymous function needs to be assign to a variable or pass as a parameter to a function
     $greet = function($name){
         return "Hello, $name \n";
     };
@@ -15,7 +16,7 @@
 
 
     $message = "Bye";
-    $goodbye = function($name) use ($message){ // use access variables outisde of anon func // using & will change the real value
+    $goodbye = function($name) use ($message){ // use access variables outisde of anon func 
         $message = $message . "!"; //you can change the value within anon func making a copy
         return "$message, $name \n";
     };
