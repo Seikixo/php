@@ -1,6 +1,6 @@
 <?php
 
-    class Person{
+    /*class Person{
 
         public function __construct(public string $name, public int $age){ //The constructor method (__construct) is a special method that gets called automatically when an object of the class is instantiated.
         }
@@ -21,13 +21,34 @@
         }
 
 
+    }*/
+
+    class Car{
+        private $name;
+
+        public function setModel($name){
+           $this->name = $name;
+
+           
+        }
+
+        public function getModel(){
+            return("{$this->name}is driving");
+        }
+
     }
 
-    $person = new Employee("Seikizo", 23, "Jr. Web Dev"); //A new object Person is created using the new keyword.
-    echo $person->introduce();
+    class Toyota extends Car{
+
+    }
+
+    $car = new Toyota();
+    $car->setModel('Hilux');
+    echo($car->getModel());
+
 
     //Polymorph
-    $people = [
+    /*$people = [
         new Employee("Vincenzo", 21, "CEO"),
         new Person("Adam", 25)
     ];
@@ -38,4 +59,4 @@
 
     foreach($people as $person){
         introduce($person);
-    }
+    }*/
