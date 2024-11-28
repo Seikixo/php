@@ -26,10 +26,10 @@
     }
 
     $account = new BankAccount();
-    
-    
+    $account->deposite(1000);
+    $withDrawSuccess = $account->withdraw(500);
+
     var_dump(
-        $account->deposite(1000),
-        $account->withdraw(500), 
+        $withDrawSuccess,
         $account->getBalance()        
     );

@@ -23,6 +23,20 @@
 
     }*/
 
+        //Polymorph
+    /*$people = [
+        new Employee("Vincenzo", 21, "CEO"),
+        new Person("Adam", 25)
+    ];
+
+    function introduce(Person $person){
+        echo $person->introduce();
+    }
+
+    foreach($people as $person){
+        introduce($person);
+    }*/
+
     class Car{
         private $name;
 
@@ -39,24 +53,13 @@
     }
 
     class Toyota extends Car{
-
+        public function ratings(){
+            return "8/10";
+        }
     }
 
     $car = new Toyota();
     $car->setModel('Hilux');
-    echo($car->getModel());
+    var_dump($car->getModel(),  $car->ratings());
 
 
-    //Polymorph
-    /*$people = [
-        new Employee("Vincenzo", 21, "CEO"),
-        new Person("Adam", 25)
-    ];
-
-    function introduce(Person $person){
-        echo $person->introduce();
-    }
-
-    foreach($people as $person){
-        introduce($person);
-    }*/
